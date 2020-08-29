@@ -1,0 +1,33 @@
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mainTitle {
+    text-align: center;
+    font-family: Exo20-Thin;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+        margin: auto;
+    }
+}

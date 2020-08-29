@@ -1,0 +1,153 @@
+.card {
+    padding: 4px;
+    border-radius: 0 11px 11px 11px; 
+    transition: all ease .2s; 
+}
+
+.cardDefault {
+    background:linear-gradient(-225deg, transparent 32px, #1698d9 0);
+}
+
+.cardDefault:hover {
+    background:linear-gradient(-225deg, transparent 32px, #2ea8e6 0);
+}
+
+.cardSelected {
+    background:linear-gradient(-225deg, transparent 32px, #d91667 0);
+}
+
+.cardSelected:hover {
+    background:linear-gradient(-225deg, transparent 32px, #e62e7a 0);
+}
+
+.cardDisabled {
+    background:linear-gradient(-225deg, transparent 32px, #b3b3b3 0);
+}
+
+
+.cardDisabled p, .cardDisabled h2 {
+    color: #d4d4d4;
+}
+.cardBody {
+    height: 480px;
+    background:linear-gradient(-225deg, transparent 30px, #fff 0);
+    color: #000;
+    padding: 15px 45px 0;
+    border-radius: 0 8px 8px 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardDisabled .cardBody {
+    cursor: auto;
+}
+
+.cardDescription {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.cardDescription span {
+    color: #d91667;
+}
+
+.cardTitle {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.cardTitle span {
+    display: block;
+    font-size: 24px;
+}
+
+.cardPortions, .cardMouse {
+    margin: 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.cardImg {
+    width: 370px;
+    position: absolute;
+    bottom: -95px;
+    left: -25px;
+}
+
+.cardDisabled .cardImg {
+    opacity: 0.5;
+}
+
+.cardWeight {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color:#fff; 
+}
+
+.cardDisabled .cardWeight {
+    background: #b3b3b3;
+}
+
+.cardDefault .cardWeight {
+    background: #1698d9;
+}
+
+.cardDefault:hover .cardWeight {
+    background: #2ea8e6;
+    transition: all ease .2s;
+}
+
+.cardSelected .cardWeight {
+    background: #d91667;
+}
+
+.cardSelected:hover .cardWeight {
+    background: #e62e7a;
+    transition: all ease .2s;
+}
+
+.cardWeight .number {
+    font-size: 42px;
+    line-height: 42px;
+}
+
+.cardWeight .weight {
+    font-size: 21px;
+    line-height: 21px;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.link {
+    text-align: center;
+    margin: 0;
+    font-size: 13px;
+}
+
+.link a {
+    color: #1698d9;
+    border-bottom: 1px dashed #1698d9;
+    cursor: pointer;
+}
+
+.cardDisabled+.link {
+    color: #ffff66
+}
